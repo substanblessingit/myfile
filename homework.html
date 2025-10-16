@@ -7,14 +7,46 @@
 </head>
 <body>
 #1
-<p><a href="https://youtube.com/shorts/Ry-Fuwu6HyU?si=wuKPkADAGyKtE4G6" target="_blank">Смешные моменты Питер Гриффин кроссовки Теслик</a></p> <!--Ссылка на ютуб видео открывающиеся в новой вкладе -->
-<p><a href="#bottom_part">Спустится вниз</a></p> <!--Ссылка-якорь, прокручивает страницу к элементу "Низ"--> 
-<p><a href="#section2">Спустится к разделу 2</a></p> <!--Ссылка-якорь, прокручивает страницу к элементу ""--> 
-#2
-<p><img src="thinking-emoji-emoticon-vector-49575400_1.png" alt="Изображени 1"  width="300" height="500"></p>  <!--Вставка изображения с локального устройства-->
-<p><img src="https://m.media-amazon.com/images/I/81jeIq-s7IL._UF1000,1000_QL80_.jpg" alt="Изображени 2"  width="400" height="400"></p> <!--Вставка изображения с помощью URL-ссылки на него-->
+<form> 
 
-<h2 id="bottom_part">Низ</h2> <!--Сюда ведет якорная ссылка "спустится вниз"-->
-<h2 id="section2">Раздел 2</h2> <!--Сюда ведет якорная ссылка "Спустится к разделу 2"-->
+<fieldset>
+<legend>Данные пользователя</legend>
+<label for="name">Name:</label>
+<input type="text" name = "name"
+       id="name" required /> <br><br>
+
+<div class="form-example">
+<label>Email:</label>
+<input type="email" name="Email"
+       id="email" required><br><br>
+
+<div class="form-example">
+<label>Password:</label>
+<input type="password" name="password"
+       id="password" required><br><br>
+</fieldset>
+
+<fieldset>
+<legend>Комментарий</legend>
+<label for="comment">Comment:</label>
+<textarea id="comment" name="comment" rows="4" cols="50"></textarea><br><br>
+<button type="submit">Submit</button><br><br>
+</fieldset>
+<p>#2<p>
+<fieldset>
+<legend>Выбор страны</legend>
+<label for="country">Country:</label>
+<select id="country" name="country" required>
+           <option value="">Select your country</option>
+<option value="us">United Stated</option>
+<option value="cn">Canada</option>
+<option value="mx">Mexico</option></select><br><br>
+</fieldset>
+<fieldset>
+<legend>Отправка/сброс</legend>
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+</fieldset>
+</form>
 </body>
 </hmtl>
