@@ -1,0 +1,65 @@
+/*#1*/
+ h1 {
+      color: darkblue; /*Цвет заголовков*/
+      text-align: center; /*выравнивание по центру*/
+    }
+
+    h2 {
+      color: crimson;
+    }
+
+    /*Разнвй размер шрифта для абзацев*/
+    p.small {
+      font-size: 14px;
+    }
+
+    p.medium {
+      font-size: 18px;
+    }
+
+    p.large {
+      font-size: 22px;
+      font-weight: bold; /*Абзац теперь имеет жирный шрифт*/
+    }
+
+    /*#2*/
+    .container {
+      background-color: gainsboro; /*Фоновый цвет*/
+      background-image: url('.jpg'); /*Фоновое изображение*/
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 20px;
+      margin: 20px 0;
+      color: white;
+    }
+
+    /* #3 */
+    .box {
+      border: 2px solid lime; 
+      padding: 15px; /*Внутренний отступ*/
+      margin: 10px; /*Внешний отступ*/
+      background-color: lightyellow;
+    }
+
+    /* #4 */
+    .size-box {
+      width: 200px;  /*Ширина*/
+      height: 100px; /*Высота*/
+      border: 2px solid blue;
+      overflow: hidden; /*Скрытие*/
+      margin: 10px;
+      padding: 10px;
+      background-color: turquoise;
+    }
+
+    .scroll-box {
+      width: 200px;
+      height: 100px;
+      border: 2px dashed red;
+      overflow: scroll; /*Прокрутка*/
+      margin: 10px;
+      padding: 10px;
+      background-color: pink;
+    }
+
+
