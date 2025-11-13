@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Блочные и линейные элементы</title>
+
+  <style>
+
+    /*Добавление рамки*/
+    h1, p, div, img {
+      border: 2px solid #999;
+      margin: 10px;
+      padding: 10px;
+    }
+
+    /*Сделал картинку в блоке*/
+    .block-image {
+      display: block;
+      margin: 10px auto;
+      border-color: blue;
+    }
+
+    /*Перенес абзац в inline*/
+    .inline-paragraph {
+      display: inline;
+      border-color: red;
+    }
+
+    .container {
+      display: block;           /*Создал контейнер*/
+      border: 2px solid green;
+      padding: 15px;
+      margin-top: 20px;
+      background-color: #f9f9f9;
+    }
+
+    /*Делаю эти элементы блочными*/
+    .container p,
+    .container img,
+    .container a {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .container img {
+      width: 150px;
+    }
+
+    .container a {
+      color: blue;
+      text-decoration: none;
+    }
+
+    .container a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+ 
+  <h1>Предмет в блоке</h1>
+
+  <p>Это абзац — тоже блочный элемент (block).</p>
+
+  <div>Контейнер который занимает всю ширину.</div>
+
+  <img src="https://assets.soundgym.co/posts/QKAVKQ.jpg" alt="Картинка">
+  <!--Сделал img линейным элементом-->
+
+
+  <h2>Преобразование элементов</h2>
+
+  <p class="inline-paragraph">
+    Этот абзац стал линейным;
+  </p>
+  <p class="inline-paragraph">
+    Второй абзац тоже inline, теперь они идут подряд.
+  </p>
+
+  <img class="block-image" src="https://assets.soundgym.co/posts/QKAVKQ.jpg" alt="Блочная картинка">
+  <!--Я сделал img блочным элементом-->
+
+ 
+  <h2>Вложенные элементы в контейнере</h2>
+  <div class="container">
+    <p>Абзац внутри контейнера</p>
+    <img src="https://assets.soundgym.co/posts/QKAVKQ.jpg" alt="Вложенное изображение">
+    <a href="#">Ссылка внутри контейнера</a>
+  </div>
+
+
+</body>
+</html>
