@@ -1,65 +1,80 @@
-/*#1*/
- h1 {
-      color: darkblue; /*Цвет заголовков*/
-      text-align: center; /*выравнивание по центру*/
-    }
+html {
+  font-size: 16px; /*Задаем стандарт для размера текста */
+}
 
-    h2 {
-      color: crimson;
-    }
+body {
+  font-family: Arial, sans-serif; /*Я дал шрифт ариалс*/
+  margin: 20px;                   /*Отступ от всех сторон*/
+  background-color: #f9f9f9;      /*Задний фон для всего сайта*/
+}
 
-    /*Разнвй размер шрифта для абзацев*/
-    p.small {
-      font-size: 14px;
-    }
+h1 {
+  font-size: 2rem;   /*Размер шрифат*/
+  color: #333;       /*Дал темно серый цвет */
+  text-align: center; /*Расположил текст в центре*/
+}
 
-    p.medium {
-      font-size: 18px;
-    }
+h2 {
+  font-size: 1.5rem; /*Дал размер шрифта * 1.5rem*/
+  margin-top: 30px;  /*Отступ сверху*/
+  color: #444;       /*Серый цвет*/
+}
 
-    p.large {
-      font-size: 22px;
-      font-weight: bold; /*Абзац теперь имеет жирный шрифт*/
-    }
+.container {
+  width: 80%;                /*Контейнер который будет занмать 80% ширины окна*/
+  background-color: #26c6cc; /*бирюзовый фон*/
+  padding: 20px;             /*Внутрений отступ*/
+  border: 2px solid #558ada; /*Голубая рамка*/
+  margin: 0 auto;            /*Контейнер будет снизу по центру*/
+}
 
-    /*#2*/
-    .container {
-      background-color: gainsboro; /*Фоновый цвет*/
-      background-image: url('.jpg'); /*Фоновое изображение*/
-      background-size: cover;
-      background-repeat: no-repeat;
-      padding: 20px;
-      margin: 20px 0;
-      color: white;
-    }
-
-    /* #3 */
-    .box {
-      border: 2px solid lime; 
-      padding: 15px; /*Внутренний отступ*/
-      margin: 10px; /*Внешний отступ*/
-      background-color: lightyellow;
-    }
-
-    /* #4 */
-    .size-box {
-      width: 200px;  /*Ширина*/
-      height: 100px; /*Высота*/
-      border: 2px solid blue;
-      overflow: hidden; /*Скрытие*/
-      margin: 10px;
-      padding: 10px;
-      background-color: turquoise;
-    }
-
-    .scroll-box {
-      width: 200px;
-      height: 100px;
-      border: 2px dashed red;
-      overflow: scroll; /*Прокрутка*/
-      margin: 10px;
-      padding: 10px;
-      background-color: pink;
-    }
+.box {
+  width: 50%;                 /*Установил размер 50% от контейнера*/
+  background-color: #a5d0f1;  /*Светло-голубой фон*/
+  padding: 10px;              /*Отступ внутри блока*/
+  margin: 10px;               /*Отступы вокруг блока*/
+  border: 1px solid #1976d2;  /*Тонкая синяя рамка*/
+}
 
 
+.text-rem {
+  font-size: 1.5rem; /*Увеличение текста относительно всего сайта*/
+  color: #1565c0;    /*Синий текст*/
+}
+
+.fixed-box {
+  width: 200px;             /*Установил ширину 200пх*/
+  height: 100px;            /*Установил высоту 100пх*/
+  background-color: #64b5f6;            /*Голубой фон*/
+  color: white;             /*Белый текст*/
+  text-align: center;       /*Расположил текст к центру */
+  line-height: 100px;       /*Выравнивание текста*/
+  margin: 20px auto;        /*Отступ с низу и с верху*/
+  font-size: 1rem;          /*Размер текста = корню*/
+  border-radius: 8px;       /*Скругление углов*/
+}
+
+.hex-block {
+  background-color: #ffcc80; /*Фон в формате hex*/
+  color: #4e342e;            /*коричневый текст*/
+  border-radius: 6px;        /*Скруглённые углы*/
+  margin: 10px 0;            /*Отступы сверху и снизу*/
+  padding: 15px;             /*Внутренний отступ*/
+}
+
+.rgb-block {
+  background-color: rgb(144, 238, 144); /*Лаймовый фон */
+  color: rgb(0, 51, 0);                 /*зелёный текст */
+  padding: 15px;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+
+.rgba-block {
+  background-color: rgba(33, 150, 243, 0.3); /*Голубой фон с прозрачностью 30%*/
+  color: rgba(0, 0, 0, 0.8);                 /*Черный текст с прозрачностью*/
+  padding: 15px;
+  border-radius: 6px;
+  margin: 10px 0;
+  border: 1px solid rgba(33, 150, 243, 0.7); /*Полупрозрачная голубая рамка*/
+}
