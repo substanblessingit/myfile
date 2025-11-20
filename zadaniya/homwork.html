@@ -3,93 +3,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Блочные и линейные элементы</title>
+  <title>Единицы измерения</title>
 
   <style>
+/*#1*/
+  h1{
+    text-align: center; /*Расположение текста по центру*/
+    margin-bottom: 20px; /*Отступ*/
+  }
 
-    /*Добавление рамки*/
-    h1, p, div, img {
-      border: 2px solid #999;
-      margin: 10px;
-      padding: 10px;
-    }
+.box1,.box2,.box3,.box4{
+  border-radius: 12px; /*Скругление углов*/
+  padding: 15px; /*Внутренний отступ блока*/
+  margin-bottom: 10px; /*Отсутп снизу*/
+}
+  
+  .box1{
+    width: 300px; /*Ширина*/
+    height: 150px; /*Высота*/
+    background-color: #F08080; /*Установка цвета с использованием hex*/
+  }
 
-    /*Сделал картинку в блоке*/
-    .block-image {
-      display: block;
-      margin: 10px auto;
-      border-color: blue;
-    }
+  .box1 img { 
+    width:100%; /*Ширина*/
+    border-radius: 10px; /*Скругление*/
+    
+  }
 
-    /*Перенес абзац в inline*/
-    .inline-paragraph {
-      display: inline;
-      border-color: red;
-    }
+  .box2{
+    font-size: 2em; /*Размер шрифта относительно текста родителя*/
+    padding: 1rem; /*Отсуп*/
+    border-left: 2px solid darksalmon; /*Установка левой границы рамки*/
+    background-color: rgba(240,128,128); /*Цвет фона с использованием rgba*/
+  }
+  .box3{
+    font-size:1,75rem; /*Размер текста относительно корневого файла*/
+    padding: 1rem; /*Отступ относительно файла*/
+    background-color: rgb(240,128,128); /*Установка цвета с использованием rgb*/
+  }
+  
+  .box4{
+    width: 30%; /*Размер с использованием %*/
+    padding: 10px;
+    background-color: lightcoral;
+  }
 
-    .container {
-      display: block;           /*Создал контейнер*/
-      border: 2px solid green;
-      padding: 15px;
-      margin-top: 20px;
-      background-color: #f9f9f9;
-    }
-
-    /*Делаю эти элементы блочными*/
-    .container p,
-    .container img,
-    .container a {
-      display: block;
-      margin-bottom: 10px;
-    }
-
-    .container img {
-      width: 150px;
-    }
-
-    .container a {
-      color: blue;
-      text-decoration: none;
-    }
-
-    .container a:hover {
-      text-decoration: underline;
-    }
   </style>
-</head>
+ <h1>Домашная работа</h1>
+ <div class=box1> 
+  Текст
+ </div>
 
-<body>
+ <div class="box2">
+  Текст
+ </div>
+
+ <div class="box3">
+  Текст
+ </div>
  
-  <h1>Предмет в блоке</h1>
+ <div class="box4">
+  Текст
+ </div>
 
-  <p>Это абзац — тоже блочный элемент (block).</p>
-
-  <div>Контейнер который занимает всю ширину.</div>
-
-  <img src="https://assets.soundgym.co/posts/QKAVKQ.jpg" alt="Картинка">
-  <!--Сделал img линейным элементом-->
-
-
-  <h2>Преобразование элементов</h2>
-
-  <p class="inline-paragraph">
-    Этот абзац стал линейным;
-  </p>
-  <p class="inline-paragraph">
-    Второй абзац тоже inline, теперь они идут подряд.
-  </p>
-
-  <img class="block-image" src="https://assets.soundgym.co/posts/QKAVKQ.jpg" alt="Блочная картинка">
-  <!--Я сделал img блочным элементом-->
-
- 
-  <h2>Вложенные элементы в контейнере</h2>
-  <div class="container">
-    <p>Абзац внутри контейнера</p>
-    <img src="https://assets.soundgym.co/posts/QKAVKQ.jpg" alt="Вложенное изображение">
-    <a href="#">Ссылка внутри контейнера</a>
-  </div>
-
+ <div class="box1">
+  <img src="https://assets.soundgym.co/posts/QKAVKQ.jpg" alt="Картинка"> <!--Вставка изображения-->
+  Блок с картинкой
+ </div>
 
 </body>
 </html>
