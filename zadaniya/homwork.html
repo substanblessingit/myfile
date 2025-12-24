@@ -4,125 +4,101 @@
     <meta charset="UTF-8">
     <title>Домашнее задание</title>
 
-    <style>
- /* #1 */
-/* Изменение цвета кнопки */
-    button:hover {
-    background-color: #4caf50;
-    color: white;
+<style>
+.block-static {
+    position: static;
+    width: 150px;
+    height: 75px;
+    background-color: lightsalmon;
 }
 
-/* Изменение границы */
-input:focus {
-    border: 2px solid #ff5722;
-    outline: none;
+.block-relative {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    width: 150px;
+    height: 75px;
+    background-color: lightcoral;
 }
 
-/* #2 */
-ul li:first-child {
-    color: blue;
-    font-weight: bold;
+.container {
+    position: relative;
+    width: 150px;
+    height: 75px;
+    background-color: coral;
+    margin-top: 20px;
 }
 
-       
-ul li:last-child {
-    color: red;
-    font-style: italic;
+.absolute {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px;
+    height: 40px;
+    background-color: darksalmon;
 }
 
-/* #3 */
-/* Ссылка */
-.block a:hover {
-    color: #e91e63;
+.block-fixed {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 120px;
+    height: 50px;
+    background-color: salmon;
 }
 
-/* Нечетные элементы */
-.block p:nth-child(odd) {
-    background: #f3f3f3;
-    padding: 5px;
+.sticky-title {
+    position: sticky;
+    top: 20px;
+    background-color: rgb(194, 94, 28);
+    padding: 10px;
+    border-bottom: 2px solid rgb(92, 61, 5);
+    z-index: 10;
 }
-/* #4 */
-.container div:first-child:hover {
-    background: #c8e6c9;
-}
-
-.container input:last-child:focus {
-    background: #fff9c4;
-    border: 2px solid #fdd835;
-}
-
-
-
-    </style>
+</style>
 </head>
+
 <body>
 
-<h1>Домашнее задание. Тема: псевдоклассы </h1>
+<div class="block-static">Static</div>
 
+<div class="block-relative">Relative</div>
 
-<!--- #1 --->
-
-<div class="section">
-    <h2>#1: hover и focus</h2>
-
-    <form>
-        <label>Введите текст:</label><br>
-        <input type="text" placeholder="Фокус"><br><br>
-
-        <button type="button">кнопка</button>
-    </form>
+<div class="container">
+    <div class="absolute">Absolute</div>
 </div>
 
+<div class="block-fixed">Fixed</div>
 
-<!--- #2 --->
+<h2 class="sticky-title">Липкий заголовок</h2>
 
-<div class="section">
-    <h2>#2:</h2>
-
-    <ul>
-        <li>Первый элемент </li>
-        <li>Второй элемент</li>
-        <li>Третйи элемент</li>
-        <li>Последний элемент</li>
-    </ul>
-</div>
-
-
-<!--- #3 --->
-
-<div class="section">
-    <h2>#3:</h2>
-
-    <div class="block">
-        <p>Первый абзац, выделенный</p>
-        <p>Второй абзац</p>
-        <p>Третий абзац, выделенный</p>
-
-        <a href="#">Ссылка</a>
-    </div>
-</div>
-
-
-<!--- #4 --->
-
-<div class="section">
-    <h2>#4:</h2>
-
-    <div class="container">
-        <div>блок</div>
-        <div>блок</div>
-        <input type="text" placeholder="фокус">
-    </div>
-</div>
-
-
-
-<!---hover применяется когда кто-то наводится на элемент
-    focus меняет элемент когда с кнопкой кто-то взаимодействует
-    first-child выделяет первый элемент от родителя
-    last-child выделяет последний элемент от родителя
-    nth-child позволяет выделять четные или не четные элементы
-    псевдоклассы делают страницу более лициприятной без джаваскрипта--->
+<p>Текст</p>
+<p>Текст</p>
+<p>Текст</p>
+<p>Текст</p>
+<p>Текст</p>
+<p>Текст</p>
+<p>Текст</p>
+<p>Текст</p>
+<p>Текст</p>
+<p>Текст</p>
+<p>Текст</p>
+<p>Текст</p>
+<p>Текст</p>
+<p>Текст</p>
+<p>Текст</p>
+<p>Текст</p>
+<p>Текст</p>
+<p>Текст</p>
+<p>Текст</p><p>Текст</p>
+<p>Текст</p>
+<p>Текст</p>
+<p>Текст</p>
+<p>Текст</p>
+<p>Текст</p>
+<p>Текст</p>
+<p>Текст</p>
+<p>Текст</p>
 
 
 </body>
